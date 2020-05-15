@@ -1,7 +1,8 @@
 {
-    "name": "opengraph-blog-images",
-    "version": "1.0.0",
-    "main": "index.js",
-    "author": "bobbybrooksatx <brooks@bobbybrooksatx.com> (@bobbybrooksatx)",
-    "license": "MIT",
+  "name": "opengraph-blog-images",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BobbyBrooksATX/opengraph-blog-images.git",
+  "author": "bobbybrooksatx <brooks@mindsetatx.com>",
+  "license": "MIT"
 }
