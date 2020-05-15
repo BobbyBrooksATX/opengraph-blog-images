@@ -60,7 +60,7 @@ function App() {
               textAlign: `center`
             }}
           >
-            7 ways to improve your customer experience, Updated 2020
+            {window.title}
           </Textfit>
         </h1>
         <div
@@ -75,7 +75,7 @@ function App() {
               listStyleType: `none`,
               display: `flex`,
               "& li": {
-                fontSize: 24,
+                fontSize: 28,
                 marginRight: "0.5rem",
                 "&:not(:last-child):after": {
                   content: "'•'",
@@ -84,15 +84,15 @@ function App() {
               }
             }}
           >
-            <li>customer value</li>
-            <li>websites</li>
-            <li>gatsby</li>
+            {window.TimeRanges.map(tag => (
+              <li key={tag}>{tag}</li>
+            ))}
           </ul>
           <span
           css={{
-            fontSize: 24,
+            fontSize: 28,
           }}
-          >@bobbybrooksatx</span>
+          >{window.author}</span>
         </div>
       </div>
     </div>

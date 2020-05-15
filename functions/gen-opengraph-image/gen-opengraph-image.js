@@ -35,7 +35,7 @@ exports.handler = async function(event, ctx) {
   await page.addScriptTag({ content: script });
   const boundingRect = await page.evaluate(() => {
     const corgi = document.getElementById("corgi");
-    const { x, y, width, height } = corgi.children[0].getBoundingClientRect();
+    const { x, y, width, height } = bbatx.children[0].getBoundingClientRect();
     return { x, y, width, height };
   });
 
