@@ -17,7 +17,7 @@ exports.handler = async function(event, ctx) {
     </head>
 
     <body>
-      <div id="bbatx"><div>NO CORGIS HERE</div></div>
+      <div id="corgi"><div>NO CORGIS HERE</div></div>
     </body>
   </html>
   `);
@@ -34,8 +34,8 @@ exports.handler = async function(event, ctx) {
   });
   await page.addScriptTag({ content: script });
   const boundingRect = await page.evaluate(() => {
-    const bbatx = document.getElementById("bbatx");
-    const { x, y, width, height } = bbatx.children[0].getBoundingClientRect();
+    const corgi = document.getElementById("corgi");
+    const { x, y, width, height } = corgi.children[0].getBoundingClientRect();
     return { x, y, width, height };
   });
 
