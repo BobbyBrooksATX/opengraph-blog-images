@@ -2,6 +2,7 @@
   "name": "gen-opengraph-image",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "bobbybrooksatx <brooks@mindsetatx.com>",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "^10.0.28",
